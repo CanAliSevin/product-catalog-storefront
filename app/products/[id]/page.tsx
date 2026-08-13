@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import AddToCartButton from "./AddToCartButton";
 interface Product {
     id: string;
     name: string;
@@ -91,6 +91,12 @@ export default async function ProductDetailPage({
                         <p className="mt-4 text-sm text-[#8A8778]">
                             Satıcı: {product.storeName}
                         </p>
+                        <AddToCartButton
+                            id={product.id}
+                            name={product.name}
+                            price={product.price}
+                            imageUrl={product.imageUrl}
+                        />
                     </div>
                 </div>
             </div>
