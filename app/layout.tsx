@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PttAVM",
+  title: "PettAVM",
   description: "Ürün Kataloğu",
 };
 
