@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+
+
 export const metadata: Metadata = {
   title: "PettAVM",
   description: "Ürün Kataloğu",
