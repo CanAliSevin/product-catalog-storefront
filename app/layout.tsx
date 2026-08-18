@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   description: "Ürün Kataloğu",
 };
 
+
+
+
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
