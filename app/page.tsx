@@ -56,8 +56,13 @@ export default async function HomePage({
         <SearchBar />
       </header>
 
-      <div className="mx-auto flex max-w-7xl gap-8 px-6 py-8">
-        <CategorySidebar activeCategoryId={categoryId} />
+      {/* DEĞİŞİKLİK BURADA: flex-col ve md:flex-row eklendi */}
+      <div className="mx-auto flex max-w-7xl flex-col md:flex-row gap-8 px-6 py-8">
+
+        {/* KATEGORİ BÖLÜMÜ GÜNCELLENDİ: Mobilde tam genişlik, masaüstünde 64 birim */}
+        <div className="w-full shrink-0 md:w-64">
+          <CategorySidebar activeCategoryId={categoryId} />
+        </div>
 
         <div className="flex-1">
           <p className="mb-6 text-sm text-[#5C5A52]">
