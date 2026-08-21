@@ -54,7 +54,6 @@ export default async function HomePage({
         <h1 className="mb-4 text-2xl font-semibold text-white tracking-tight">
           Ürün Kataloğu
         </h1>
-        <h1 className="text-red-500 font-bold text-4xl">TEST: YENİ GÖRÜNÜM</h1>
         <SearchBar />
       </header>
 
