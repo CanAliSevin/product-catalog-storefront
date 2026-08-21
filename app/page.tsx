@@ -48,11 +48,13 @@ export default async function HomePage({
   const products = await getProducts(q, categoryId);
 
   return (
+
     <main className="min-h-screen bg-[#F7F5F0]">
       <header className="bg-[#0B3D42] px-6 py-5">
         <h1 className="mb-4 text-2xl font-semibold text-white tracking-tight">
           Ürün Kataloğu
         </h1>
+        <h1 className="text-red-500 font-bold text-4xl">TEST: YENİ GÖRÜNÜM</h1>
         <SearchBar />
       </header>
 
