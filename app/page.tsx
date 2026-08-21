@@ -56,20 +56,21 @@ export default async function HomePage({
         <SearchBar />
       </header>
 
-      {/* DEĞİŞİKLİK BURADA: flex-col ve md:flex-row eklendi */}
-      <div className="mx-auto flex max-w-7xl flex-col md:flex-row gap-8 px-6 py-8">
+      {/* Ana kapsayıcı: Mobilde alt alta (flex-col), bilgisayarda yan yana (md:flex-row) */}
+      <div className="mx-auto flex max-w-7xl flex-col md:flex-row gap-6 md:gap-8 px-4 md:px-6 py-8">
 
-        {/* KATEGORİ BÖLÜMÜ GÜNCELLENDİ: Mobilde tam genişlik, masaüstünde 64 birim */}
-        <div className="w-full shrink-0 md:w-64">
+        {/* Kategori Sidebar Alanı: Mobilde tam genişlik, masaüstünde 56 birim */}
+        <div className="w-full shrink-0 md:w-56">
           <CategorySidebar activeCategoryId={categoryId} />
         </div>
 
+        {/* Ürünler Alanı */}
         <div className="flex-1">
           <p className="mb-6 text-sm text-[#5C5A52]">
             {q ? `"${q}" için ${products.length} sonuç` : `${products.length} ürün listeleniyor`}
           </p>
 
-          <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {products.map((product) => (
               <Link
                 key={product.id}
