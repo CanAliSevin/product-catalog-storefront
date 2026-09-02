@@ -9,6 +9,7 @@ interface Product {
   price: number;
   imageUrl: string | null;
 }
+//bu satırdaki kod, ürünleri almak için bir API çağrısı yapar ve ürünleri döndürür. Eğer bir arama sorgusu (query) varsa, arama endpoint'ine yönlendirilir. Eğer kategori ID'si varsa, kategoriye göre filtreleme yapılır.
 
 async function getProducts(query?: string, categoryId?: string): Promise<Product[]> {
   let endpoint: string;
