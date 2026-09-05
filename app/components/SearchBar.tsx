@@ -27,7 +27,7 @@ export default function SearchBar() {
             />
             <button
                 type="submit"
-                className="rounded-lg bg-[#0B3D42] px-5 py-2 text-sm font-medium text-black hover:bg-[#0B3D42]/90"
+                className="rounded-lg bg-[#0B3D42] px-5 py-2 text-sm font-medium text-white hover:bg-[#0B3D42]/90"
             >
                 Ara
             </button>
