@@ -60,14 +60,14 @@ export default function CartPage() {
                             <div className="flex items-center gap-2">
                                 <button
                                     onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                    className="h-8 w-8 rounded-full border border-[#D9D5C7] text-[#5C5A52] hover:bg-[#EFEBE2]"
+                                    className="h-8 w-8 rounded-full border border-[#D9D5C7] text-[#5C5A52] hover:bg-red-50"
                                 >
                                     −
                                 </button>
-                                <span className="w-6 text-center text-sm">{item.quantity}</span>
+                                <span className="w-6 text-center text-sm text-black">{item.quantity}</span>
                                 <button
                                     onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                    className="h-8 w-8 rounded-full border border-[#D9D5C7] text-[#5C5A52] hover:bg-[#EFEBE2]"
+                                    className="h-8 w-8 rounded-full border border-[#D9D5C7] text-[#5C5A52] hover:bg-green-50"
                                 >
                                     +
                                 </button>
