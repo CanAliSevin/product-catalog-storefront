@@ -11,6 +11,9 @@ function formatPrice(price: number) {
     });
 }
 
+
+
+
 export default function CartPage() {
     const { items, removeItem, updateQuantity } = useCart();
 
